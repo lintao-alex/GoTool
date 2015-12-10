@@ -182,4 +182,4 @@ if($list.Keys.Count -gt 0){
 	Remove-Item $keepFileName
 }
 
-#checkPublish
+checkPublish
