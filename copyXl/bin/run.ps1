@@ -127,11 +127,6 @@ $uiPath = $ProjectPath+'fla\ui'
 $log = svn log $uiPath -v -q -r head:$flaCommittedR
 $list = collectFiles $log
 
-#test
-$list = @{}
-$list['fla\ui\drama\yiling'] =1
-$list['fla\ui\activity\backPrize'] =1
-
 #确保美术有更新
 if($list.Keys.Count -gt 0){
 	if(-not(Test-Path $FlashPath)){
